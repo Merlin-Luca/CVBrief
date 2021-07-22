@@ -1,0 +1,91 @@
+*{
+    font-family :"Goudy Bookletter 1911", sans-serif;
+}
+
+@media (max-width: 1200px){
+
+        .block_1{
+            display: flex;
+            flex-direction: column;
+            background-color: orange;
+            color: white;
+            padding: 1em 4em 1em 2em;
+        }
+
+        .Trait_Noir{
+            border-bottom: black solid 8px;    
+        }
+
+        .block_2{
+            display: flex;
+            flex-direction: column;
+            padding-left: 1em;
+            padding-right: 3em;
+        }
+
+        .localisation {
+            list-style-image:url('pictures/localisation_mini.png');
+        }
+
+        .phone {
+            list-style-image:url('pictures/phone_mini.png');
+        }
+
+        .mail {
+            list-style-image:url('pictures/mail_mini.png');
+        }
+
+
+        .Trait_Superieur_Noir{
+            border-top: black solid 2px;
+        }
+
+        .img{
+            border-radius: 100%;
+            align-self: center;
+        }
+}
+
+@media (min-width: 1200px){
+
+    #Toutes_La_Pages{
+        display: flex;
+        justify-content: center;
+    }
+
+    .block_1{
+        min-height: 768px;
+        background-color: orange;
+        color: white;
+        padding: 1em 1em 1em 1em;
+    }
+
+    .Trait_Noir{
+        border-bottom: black solid 8px;    
+    }
+
+    .block_2{
+        float: left;
+        max-width: 1200px;
+        min-height: 800px;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: floralwhite;
+    }
+
+    .localisation {
+        list-style-image:url('pictures/localisation_mini.png');
+    }
+
+    .phone {
+        list-style-image:url('pictures/phone_mini.png');
+    }
+
+    .mail {
+        list-style-image:url('pictures/mail_mini.png');
+    }
+
+    .Trait_Superieur_Noir{
+        border-top: black solid 2px;
+    }
+}
