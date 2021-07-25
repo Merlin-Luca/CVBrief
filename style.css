@@ -43,6 +43,7 @@
         .img{
             border-radius: 100%;
             align-self: center;
+            margin-bottom: 1em;
         }
 }
 
@@ -58,6 +59,7 @@
         background-color: orange;
         color: white;
         padding: 1em 1em 1em 1em;
+        max-width: 300px
     }
 
     .Trait_Noir{
@@ -87,5 +89,12 @@
 
     .Trait_Superieur_Noir{
         border-top: black solid 2px;
+    }
+    .img{
+        margin-bottom: 1em;
+    }
+
+    .button{
+        margin-left: 3em;
     }
 }

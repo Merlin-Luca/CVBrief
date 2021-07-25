@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Merlin Luca</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/41121ba813.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -12,7 +13,8 @@
               <!--Block 1-->
 
                 <div class="block_1">
-                    <img class="img" src="pictures/PDP.png" style="max-width: 400px;">
+                    <img class="img" src="pictures/PDP.png" style="transform: rotate(90deg);">
+                    <button onClick="rotateImg()" class="button">Entrainement : Redresser le stagiaire,</br>Cliquez ici</button>
                         <h3>Coordonnées</h3>
                         <ul>
                           <li class="localisation"><a href="https://www.google.com/maps/place/Hem/@50.6232476,3.183026,13z/data=!4m5!3m4!1s0x47c3280c6e48030b:0x40af13e81646690!8m2!3d50.654867!4d3.18881">59510, Hem</a></li>
@@ -89,9 +91,22 @@
               +divers diplome et test de langages : </br>
               Java / JavaScript / PHP / MySQL / jSon / Ruby / Python / ...
             </p>
-
-            
           </div>
         </div>
+
+          <script>
+    let rotation = 0;
+    function rotateImg() {
+      rotation += 90;
+      if (rotation === 360) { 
+        rotation = 0;
+      }
+      document.querySelector(".img").style.transform = `rotate(${rotation}deg)`;
+      if (rotation === 0) {
+        alert('Bravo, stagiaire gagne en visibilité !');
+      }
+    }
+  </script>
+
   </body>
 </html>
