@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Merlin Luca</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="https://kit.fontawesome.com/41121ba813.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -13,8 +12,8 @@
               <!--Block 1-->
 
                 <div class="block_1">
-                    <img class="img" src="pictures/PDP.png" style="transform: rotate(90deg);">
-                    <button onClick="rotateImg()" class="button">Entrainement : Redresser le stagiaire,</br>Cliquez ici</button>
+                    <img  class="img" alt="Ma Photo" src="pictures/PDP.png">
+                    <button onClick="rotateImg()" class="button">Entrainement : Redresser le stagiaire,<br>Cliquez ici</button>
                         <h3>Coordonnées</h3>
                         <ul>
                           <li class="localisation"><a href="https://www.google.com/maps/place/Hem/@50.6232476,3.183026,13z/data=!4m5!3m4!1s0x47c3280c6e48030b:0x40af13e81646690!8m2!3d50.654867!4d3.18881">59510, Hem</a></li>
@@ -43,9 +42,9 @@
 
               <p>
                 <h3>A PROPOS DE MOI</h3>
-                Ancien étudiant motivé en anthropologie et passionné de technologie depuis tout petit, je souhaite à mon échelle liée ces 2 domaines qui m'ont toujours animé.</br>
-                Je bénéficie d'une expériance pratique dans la réalisation d'activités liées au développement web acquise au cours de diverses formations.</br>
-                Doté d'une grande capacité d'adaptation, je sais me montrer proactif et digne de confiance dans la réalisation de mes missions.</br>
+                Ancien étudiant motivé en anthropologie et passionné de technologie depuis tout petit, je souhaite à mon échelle liée ces 2 domaines qui m'ont toujours animé.<br>
+                Je bénéficie d'une expériance pratique dans la réalisation d'activités liées au développement web acquise au cours de diverses formations.<br>
+                Doté d'une grande capacité d'adaptation, je sais me montrer proactif et digne de confiance dans la réalisation de mes missions.<br>
               </p>
 
               <!--Mettre la barre noir-->
@@ -53,10 +52,9 @@
               <p>
                 <h3 class="Trait_Superieur_Noir">PARCOURS PROFESSIONEL</h3>
                 <strong>Vendeur polyvalent à Tati</strong>
-                10/2014 - 12/2014</br></br>
+                10/2014 - 12/2014<br><br>
                 <strong>Conseiller de la Jeunesse de Hem</strong>
                 09/2010 - 09/2018
-            
 
                 <ul>
                     <li>Relationnels de la petite enfance au 3ème age.</li>
@@ -73,40 +71,25 @@
 
             <h3 class="Trait_Superieur_Noir">FORMATION</h3>
             <p>
-              <strong>Développeur Web</strong>, En cours</br>
+              <strong>Développeur Web</strong>, En cours<br>
               <strong>Simplon</strong> - Roubaix
             </p>
 
-            <p>09/2019-06/2021</br>
+            <p>09/2019-06/2021<br>
               <strong>Étudiant en Anthropologie</strong>
             </p>
 
-            <p>09/2017-06/2018</br>
+            <p>09/2017-06/2018<br>
               <strong>Lycée Colbert</strong> - Tourcoing, STI2D
             </p>
 
             <p>
-              <strong>HTML - CSS</br>
-              Openclassroom / SoloLearn</strong></br>
-              +divers diplome et test de langages : </br>
+              <strong>HTML - CSSbr>
+              Openclassroom / SoloLearn</strong><br>
+              +divers diplome et test de langages : <br>
               Java / JavaScript / PHP / MySQL / jSon / Ruby / Python / ...
             </p>
           </div>
         </div>
-
-          <script>
-    let rotation = 0;
-    function rotateImg() {
-      rotation += 90;
-      if (rotation === 360) { 
-        rotation = 0;
-      }
-      document.querySelector(".img").style.transform = `rotate(${rotation}deg)`;
-      if (rotation === 0) {
-        alert('Bravo, stagiaire gagne en visibilité !');
-      }
-    }
-  </script>
-
   </body>
 </html>
